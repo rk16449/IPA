@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="controllersPackage.DashboardController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TabPane layoutX="20.0" layoutY="14.0" prefHeight="600.0" prefWidth="944.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
@@ -13,10 +14,14 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="286.0" layoutY="248.0" mnemonicParsing="false" text="Application Layer" />
-                        <Button layoutX="435.0" layoutY="248.0" mnemonicParsing="false" text="Transport Layer" />
-                        <Button layoutX="301.0" layoutY="301.0" mnemonicParsing="false" text="Network Layer" />
-                        <Button layoutX="438.0" layoutY="301.0" mnemonicParsing="false" text=" Physical Layer" />
+                        <Button fx:id="btn_applicationLayer" onAction="#handleApplicationLayer" layoutX="601.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Application Layer" />
+                        <Button fx:id="btn_transportLayer" layoutX="727.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Transport Layer" />
+                        <Button fx:id="btn_networkLayer" layoutX="601.0" layoutY="192.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Network Layer" />
+                        <Button fx:id="btn_physicalLayer" layoutX="727.0" layoutY="192.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text=" Physical Layer" />
+                        <Label layoutX="587.0" layoutY="111.0" prefHeight="28.0" prefWidth="70.0" text="Topics" />
+                        <Label layoutX="90.0" layoutY="325.0" text="Exam Practise" />
+                        <Button fx:id="btn_startExam" layoutX="105.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Start Exam" />
+                        <TextArea layoutX="38.0" layoutY="96.0" prefHeight="196.0" prefWidth="518.0" text="Test yourself on IPA questions based off the 4 sub-categories in the exam" />
                      </children>
                   </AnchorPane>
             </content>
